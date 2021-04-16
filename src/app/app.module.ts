@@ -3,14 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MoviesComponent } from './components/movies/movies.component';
+import { MovieComponent } from './components/movie/movie.component';
+import { FormsModule } from '@angular/forms';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MoviesComponent,
+    MovieComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
