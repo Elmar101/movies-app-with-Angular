@@ -1,0 +1,13 @@
+<div class="card" *ngIf="signinService.messages.length">
+  <div class="card-header">
+    Message
+    <hr/>
+
+    <button class="btn btn-danger btn-sm" (click)="signinService.clearMessage()">
+      Clear
+    </button>
+  </div>
+  <div class="card-body">
+    <p *ngFor="let message of signinService.messages">{{message}}</p>
+  </div>
+</div>

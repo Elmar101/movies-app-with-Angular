@@ -3,17 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MoviesComponent } from './components/movies/movies.component';
-import { MovieComponent } from './components/movie/movie.component';
 import { FormsModule } from '@angular/forms';
-import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
+
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { MoviesComponent } from './components/movies-all/movies.component';
+import { MovieComponent } from './components/movies-all/movie/movie.component';
+import { MovieDetailComponent } from './components/movies-all/movie-detail/movie-detail.component';
+import { NavbarComponent } from './components/simple-component/navbar/navbar.component';
+import { DashboardComponent } from './components/simple-component/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
     MovieComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    SignInComponent,
+    NavbarComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
